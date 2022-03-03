@@ -266,12 +266,16 @@ a {
 
 .issueBanner:last-child {
     margin-bottom: 0;
+    text-align: center;
 }
 
 .issueBanner--investigating {
     background: #d13943;
 }
 
+.issueBanner--nominal {
+    background: #39d15a;
+}
 .issueBanner--identified {
     background: #d13980;
 }
@@ -728,11 +732,12 @@ a {
     color: #fff;
     margin-bottom: 15px;
 }
+
 .siteHeader__title1 {
     font-size: 35px;
     letter-spacing: -0.05em;
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: white;
     margin-bottom: 15px;
     text-align: center;
 }
