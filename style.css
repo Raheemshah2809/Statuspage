@@ -734,6 +734,7 @@ a {
     font-weight: 700;
     color: rgb(0, 0, 0);
     margin-bottom: 15px;
+    text-align: center;
 }
 
 @media (max-width: 750px) {
