@@ -5,159 +5,194 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Status Page</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <title>Document</title>
 </head>
 
 <body>
-    <header class='siteHeader'>
+    <main id="main-container">
 
-        <div class='container'>
-            <p class='siteHeader__title'>Website Status Page</p>
-            <br>
-            <p class='siteHeader__title'>Service Status On All My Websites and Apps</p>
-            <p class='siteHeader__title1'>Version 1.23</p>
-            <a href="https://raheemshahdev.me/">
-                <p class='siteHeader__title1'>Click Here To Go Back</p>
-            </a>
-        </div>
-    </header>
 
-    <div class='container'>
-
-        <section class='ongoingIssues'>
-            <div href='#' class='issueBanner issueBanner--monitoring'>
-                <p class='issueBanner--investigating'>Investigating</p>
-                <p class='issueBanner--investigating'>Website and App - Build's Failed</p>
-                <p class='issueBanner--investigating'>Several Sites Down, Currently Investigating</p>
-                <br>
-                <p>Servers Systems</p>
-                <p class='issueBanner--nominal'>Server A: Nominal</p>
-                <p class='issueBanner--investigating'>Server B: Down - For Maintenance</p>
-                <p class='issueBanner__time'>last updated <time id="time"></time></p>
+        <div class="hero-static bg-white">
+            <div class="content content-full">
+                <div class="px-3 py-5">
+                    <div class="mb-5 text-center">
+                        <a class="link-fx font-w700 font-size-h1 display-4">
+                            <span class="text-dark">Status Page
+                            </span><span class="text-primary"></span>
+                            <br>
+                            <p class="timestamp">last updated
+                                <div class="time2">
+                                    <div id="day"></div>
+                                    <div id="date"></div>
+                                    <div id="clock"></div>
+                                </div>
+                            </p>
+                        </a>
+                        <!-- <p class="text-uppercase font-w700 font-size-sm text-muted">Status Page</p> -->
+                    </div>
+                    <div class="row no-gutters d-flex justify-content-center">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="d-flex justify-content-between">
+                                <a class="btn  btn-outline-secondary btn-hero-sm btn-hero-secondary" href="https://raheemshahdev.me">
+                                    <i class="fa fa-arrow-left mr-1"></i>
+                                    Home
+                                </a>
+                                <a class="btn btn-outline-secondary btn-hero-sm btn-hero-success"
+                                    href="javascript:void(0)">
+                                    <i class="fa fa-rss"></i> <span
+                                        class="d-none d-sm-inline-block ml-1">Subscribe (Not working)</span>
+                                </a>
+                            </div>
+                            <hr>
+                            <h1 class="title">Updates</h1>
+                            <div class="alert alert-warning d-flex align-items-center justify-content-between"
+                                role="alert">
+                                <div class="flex-fill mr-3">
+                                    <p class="mb-0">Investigating Current Issues</p>
+                                </div>
+                                <div class="flex-00-auto">
+                                    <i class="fa fa-fw fa-2x fa-exclamation-triangle"></i>
+                                </div>
+                            </div>
+                            <div class="alert alert-danger d-flex align-items-center justify-content-between"
+                                role="alert">
+                                <div class="flex-fill mr-3">
+                                    <p class="mb-0">Chatter App is experiencing issues.</p>
+                                </div>
+                                <div class="flex-00-auto">
+                                    <i class="fa fa-fw fa-2x fa-bug" style="animation: blinker 2s linear infinite;"></i>
+                                </div>
+                            </div>
+                            <h1 class="title">Servers</h1>
+                            <div class="alert alert-success d-flex align-items-center justify-content-between"
+                                role="alert">
+                                <div class="flex-fill mr-3">
+                                    <p class="mb-0">Server A: Nominal</p>
+                                </div>
+                                <div class="flex-00-auto">
+                                    <i class="fa fa-fw fa-2x fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="alert alert-danger d-flex align-items-center justify-content-between"
+                                role="alert">
+                                <div class="flex-fill mr-3">
+                                    <p class="mb-0">Server B: Offline</p>
+                                </div>
+                                <div class="flex-00-auto">
+                                    <i class="fa fa-fw fa-2x fa-wifi" style="animation: blinker 2s linear infinite;"></i>
+                                </div>
+                            </div>
+                            <br>
+                            <h1 class="title">Projects</h1>
+                            <ul class="list-group push">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Rate My Recipe
+                                    <span class="badge badge-pill badge-warning">Building</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Chatter App
+                                    <span class="badge badge-pill badge-danger">Offline</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    A's Website
+                                    <span class="badge badge-pill badge-danger">Offline</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    DigiWafl
+                                    <span class="badge badge-pill badge-success">Operational</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    The Student Marketplace
+                                    <span class="badge badge-pill badge-success">Operational</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    For R
+                                    <span class="badge badge-pill badge-success">Operational</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    The Booth
+                                    <span class="badge badge-pill badge-success">Operational</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Fluorescent-Ideas
+                                    <span class="badge badge-pill badge-success">Operational</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Portfolio
+                                    <span class="badge badge-pill badge-success">Operational</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Zap-App
+                                    <span class="badge badge-pill badge-warning">Investigating</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    What Version
+                                    <span class="badge badge-pill badge-success">Operational</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    The Ultimate Travel Guide
+                                    <span class="badge badge-pill badge-success">Operational</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    API-VA
+                                    <span class="badge badge-pill badge-danger">Offline</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Fluorescent-Ideas
+                                    <span class="badge badge-pill badge-success">Operational</span>
+                                </li><li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Portfolio Android App 
+                                    <span class="badge badge-pill badge-success">Operational</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    The Booth Android App
+                                    <span class="badge badge-pill badge-success">Operational</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Application Support Analyst
+                                    <span class="badge badge-pill badge-danger">Offline</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    My IT Solutions LTD
+                                    <span class="badge badge-pill badge-danger">Offline</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section class='serviceGroup'>
-            <ul class='serviceList serviceGroup__list'>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        DigiWafl
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="outage">Building</span></p>
-                    <p class='serviceList__name'>
-                        Chatter-App
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        A's-Website
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="issueBanner--investigating">Investigating</span></p>
-                    <p class='serviceList__name'>
-                        TSM-Mobile-App
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        The Student Marketplace v0.9.2
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        For R
-                    </p>
-                </li>
-
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        The Booth
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        Toni's Deli
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="outage">Down</span></p>
-                    <p class='serviceList__name'>
-                        The Student Marketplace (Old)
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        Fluorescent-Ideas
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        Portfolio
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="outage">Outage</span></p>
-                    <p class='serviceList__name'>
-                        Zap-App
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        WhatVersion
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        Ultimate-Travel-Guide
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="outage">Outage</span></p>
-                    <p class='serviceList__name'>
-                        API-VA-coursework
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        Portfolio-Android-App
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="outage">Outage</span></p>
-                    <p class='serviceList__name'>
-                        The-Booth-Android-App
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        Application Support Analyst
-                    </p>
-                </li>
-                <li class='serviceList__item'>
-                    <p class='serviceList__status'><span class="ok">Operational</span></p>
-                    <p class='serviceList__name'>
-                        My IT Solutions LTD
-                    </p>
-                </li>
-            </ul>
-        </section>
-    </div>
-    <script src="main.js"></script>
+        </div>
+        <div class="section">
+            <div class="status-tweets">
+                <div class="twitter">
+                    <div class="username">Updates</div>
+                </div>
+                <div class="updates">
+                    <div class="update">
+                        <div class="timestamp">November 2nd at 6:30am</div>
+                        <div class="event">API-VA, Api Has changed and needs to be re-written</div>
+                    </div>
+                    <div class="update">
+                        <div class="timestamp">1st September at 9:21pm</div>
+                        <div class="event">Offline Applications Due To Missed Payments</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>Copyright © 2022. All rights reserved.</p>
+            <p>Version 2.1</p>
+            <p>Thank You To Maryam For Testing</p>
+        </div>
+        </div> </footer> 
+        <script src="main.js"></script>
 </body>
 
 </html>
